@@ -28,4 +28,10 @@ public class Book {
     @Column(nullable = false)
     private String status;
 
+    public Book(String title, String author, String genre, String status) {
+        this.title=title;
+        this.author=author;
+        this.genre=genre;
+        this.status=status;
+    }
 }
